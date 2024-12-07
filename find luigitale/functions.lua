@@ -4,6 +4,9 @@ function functions:gencharacters(texture, count)
     for i = 1, count do  
         local char = {}
         char.texture = texture
+        char.dy = 0
+        char.isJumping = false
+
         if level == 0 then
             char.x = love.graphics.getWidth() / 2
             char.y = love.graphics.getHeight() / 2 + 200
@@ -36,6 +39,9 @@ function functions:gencharacters(texture, count)
                 char.x = math.random(0, love.graphics.getWidth() / 5)
                 char.y = math.random(0, love.graphics.getHeight() / 5)
             end
+        elseif level == 25 then
+            char.x = math.random(0, love.graphics.getWidth() - texture:getWidth())
+            char.y = love.graphics.getHeight() - texture:getHeight()
         elseif level > 0 then
             if texture == mario then
                 char.x = math.random(0, love.graphics.getWidth() - marioW)

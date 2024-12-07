@@ -40,7 +40,7 @@ function love.load()
     game = false
     dead = false
     win = false
-    level = 25
+    level = 0
 
     timer = 0
 
@@ -63,7 +63,7 @@ function love.load()
     music:setLooping(true)
 end
 
-local groundY = love.graphics.getHeight() + love.graphics.getHeight()
+local groundY = love.graphics.getHeight() + love.graphics.getHeight() - 50
 local jumpStrength = -15
 local gravity = 0.5
 
