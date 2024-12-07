@@ -5,4 +5,4 @@ SUPPORT THE ORIGINAL PROJECT PLEASE ITS FAR LESS JANKY THAN THIS
 
 original: https://github.com/i-winxd/luigi_flowey
 
-also ill probably be experimenting a ton with this, so the levels will probably be pretty messy
+also ill be experimenting a ton with this, so the levels will probably be pretty messy
